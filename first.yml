@@ -1,0 +1,23 @@
+---
+Employee:
+   - name: vivek
+     phone: 9859859895
+     address:
+      doorno: 21
+      city: hyd
+      state: telngana
+
+   - name: rajiv
+     phone: 785855526565
+     address: 
+      doorno: 13
+      city: satana
+      state: mh
+  
+   - name: baba
+     phone: 885855526565
+     address: 
+      doorno: 35
+      city: kolapur
+      state: mh
+
