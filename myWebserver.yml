@@ -16,7 +16,7 @@
 
 
     - name: i want to install webserver on ansible RedHat node
-      yum:
+      ansible.builtin.dnf:
         name: httpd
         state: present
       when: ansible_os_family =="RedHat"
