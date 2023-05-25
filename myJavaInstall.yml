@@ -1,0 +1,18 @@
+---
+ - hosts: mywebserver
+   become: yes
+   tasks:
+    - name: install java on obuntu 
+      apt: 
+        name: "{{myjavaonubuntu}}"
+        state: present
+      when: ansible_os_family =="Debian"
+    
+    - name: install java on RedHat
+      ansible.builtin.dnf:
+          name: "{{myjavaonredhat}}"
+          state: present
+      when: ansible_os_family =="RedHat"
+
+    
+  

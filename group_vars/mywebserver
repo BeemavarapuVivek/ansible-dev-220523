@@ -2,3 +2,7 @@
 myvar01: abc123
 mywebpackonubuntu: apache2
 mywebpackonredhat: httpd
+
+
+myjavaonubuntu: openjdk-8-jdk
+myjavaonredhat: java-1.8.0-openjdk
