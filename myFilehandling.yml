@@ -1,0 +1,13 @@
+---
+- hosts: 172.31.89.78
+  become: yes
+  tasks:
+  - include: myFile.yml
+  - name: install webserver on ubuntu
+    apt:
+     name: apache2
+     state: present
+  - name: i want to index file into node server
+    copy:
+      source: myIndexpage
+      destination:  /var/www/html/index.html

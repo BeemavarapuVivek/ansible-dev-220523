@@ -1,9 +1,0 @@
----
-- hosts: 172.31.89.78
-  become: yes
-  tasks:
-  - include: myFile.yml
-  - name: install webserver on ubuntu
-    apt:
-     name: apache2
-     state: present
