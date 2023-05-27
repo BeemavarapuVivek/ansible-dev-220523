@@ -9,3 +9,14 @@
     - name: i want to disply first task result 
       debug: 
         msg: "{{myfirsttaskresult}}"
+    - name: i want to install git on ubuntu
+      apt:
+       name: git
+       state: present 
+      when: myfirsttaskresult.stderr==""
+    - name: i want to install tree on ubuntu
+      apt:
+       name: tree
+       state: present
+      when: myfirsttaskresult.stderr !=""
+       
