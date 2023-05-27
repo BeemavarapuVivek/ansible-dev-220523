@@ -9,5 +9,5 @@
      state: present
   - name: i want to index file into node server
     copy:
-      source: myIndexpage
+      src: myIndexpage
       destination:  /var/www/html/index.html
