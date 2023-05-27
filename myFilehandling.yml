@@ -10,4 +10,4 @@
   - name: i want to index file into node server
     copy:
       src: myIndexpage
-      destination:  /var/www/html/index.html
+      dest:  /var/www/html/index.html
