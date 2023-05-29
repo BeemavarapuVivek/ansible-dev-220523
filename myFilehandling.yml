@@ -26,8 +26,8 @@
   
   - name: download tomcat10 war
     get_url:
-      url: https://mirrors.estointernet.in/apache/tomcat/tomcat-10/v10.0.4/bin/apache-tomcat- 10.0.4.tar.gz
-      dest: /home/ubuntu/apache-tomcat- 10.0.4.tar.gz
+      url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.9/bin/apache-tomcat-10.1.9.tar.gz
+      dest: /home/ubuntu/apache-tomcat-10.1.9.tar.gz
       force_basic_auth : yes
 
   handlers:
