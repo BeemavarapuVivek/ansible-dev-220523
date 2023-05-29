@@ -11,3 +11,7 @@
     copy:
       src: myIndexpage
       dest:  /var/www/html/index.html
+  - name: copy dyno files into nodes
+    template:
+      src: myDynoindex.j2
+      dest: /var/www/html/index.html
