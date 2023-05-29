@@ -31,7 +31,7 @@
       force_basic_auth : yes
 
   handlers:
-  - name: restartwebserver 
+  - name: restartwebserver
     service: 
       name: apache2
       state: restarted
