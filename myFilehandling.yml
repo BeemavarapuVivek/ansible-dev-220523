@@ -17,10 +17,10 @@
       src: myDynoindex.j2
       dest: /var/www/html/index.html 
     notify: restartwebserver
-  - name: download file
+  - name: download internet file
     get_url:
-     url: https://sg.mirror.servanamanaged.com/jenkins/windows-stable/2.387.3/jenkins.msi
-     dest: /ome/ubuntu/jenkin.msi
+     url: https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+     dest: /home/ubuntu/jenkin.msi
      force_basic_auth : yes
 
   handlers:
