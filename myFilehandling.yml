@@ -17,11 +17,14 @@
       src: myDynoindex.j2
       dest: /var/www/html/index.html 
     notify: restartwebserver
-  - name: download internet file
+
+  - name: download jenkin file for windows file
     get_url:
      url: https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
      dest: /home/ubuntu/jenkin.msi
      force_basic_auth : yes
+  
+
 
   handlers:
   - name: restartwebserver 
