@@ -24,7 +24,11 @@
      dest: /home/ubuntu/jenkin.msi
      force_basic_auth : yes
   
-
+  - name: download tomcat10 war
+    get_url:
+      url: https://mirrors.estointernet.in/apache/tomcat/tomcat-10/v10.0.4/bin/apache-tomcat- 10.0.4.tar.gz
+      dest: /home/ubuntu/apache-tomcat- 10.0.4.tar.gz
+      force_basic_auth : yes
 
   handlers:
   - name: restartwebserver 
